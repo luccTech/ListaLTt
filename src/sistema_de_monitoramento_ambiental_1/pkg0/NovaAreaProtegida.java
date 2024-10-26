@@ -133,10 +133,11 @@ public class NovaAreaProtegida extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSairActionPerformed
 
     private void btnSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalvarActionPerformed
-        
+
         ap.setNome(TfNome.getText());
         ap.setLocalizacao(TfLocal.getText());
         ap.setTamanho(Integer.parseInt(TfTamanho.getText()));
+        
         
         // testar se salvou.
         
@@ -152,7 +153,7 @@ public class NovaAreaProtegida extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSalvarActionPerformed
 
     private void btnDadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDadosActionPerformed
-        
+        pa.listarAreas();
     }//GEN-LAST:event_btnDadosActionPerformed
 
     /**

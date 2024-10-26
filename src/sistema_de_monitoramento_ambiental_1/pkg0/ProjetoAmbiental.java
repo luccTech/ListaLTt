@@ -37,8 +37,12 @@ public class ProjetoAmbiental {
     
     // metodo para  listarAreas()
     
-    public ArrayList<AreaProtegida> listarAreas(ArrayList<AreaProtegida> area){
-        return area;
+    public void listarAreas(){
+        for (int i = 0; i < ListAreaProtegida.size(); i++){
+            System.out.println(ListAreaProtegida.get(i).getNome());
+            System.out.println(ListAreaProtegida.get(i).getLocalizacao());
+            System.out.println(ListAreaProtegida.get(i).getTamanho());
+        }
     }
     
     
@@ -55,8 +59,8 @@ public class ProjetoAmbiental {
     
     // metodo para  listarRelatorios() 
     
-    public ArrayList<RelatorioAmbiental> listarRelatorios(ArrayList<RelatorioAmbiental> relatorio){
-        return relatorio;
+    public void listarRelatorios(){
+        
     }
     
     
@@ -73,8 +77,8 @@ public class ProjetoAmbiental {
     
     // metodo para  listarVoluntarios()
     
-    public ArrayList<Voluntario> listarVoluntarios(ArrayList<Voluntario> voluntario){
-        return voluntario;
+    public void listarVoluntarios(){
+        
     }
     
     // metodo para  adicionarEspecie(Especie especie)
@@ -90,8 +94,8 @@ public class ProjetoAmbiental {
     
     // metodo para  listarEspecie()
     
-    public ArrayList<Especie> listarEspecie(ArrayList<Especie> especie){
-        return especie;
+    public void listarEspecie(){
+        
     }
     
 
