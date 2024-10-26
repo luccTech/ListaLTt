@@ -3,8 +3,6 @@ package sistema_de_monitoramento_ambiental_1.pkg0;
 
 import javax.swing.JOptionPane;
 
-
-
 public class AreaProtegida {
     private String nome;
     private String localizacao;
