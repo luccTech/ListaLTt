@@ -152,7 +152,7 @@ public class NovaAreaProtegida extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSalvarActionPerformed
 
     private void btnDadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDadosActionPerformed
-        ap.exibirInformacoes();
+        
     }//GEN-LAST:event_btnDadosActionPerformed
 
     /**
