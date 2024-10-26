@@ -13,6 +13,9 @@ public class AreaProtegida {
         this.localizacao = localizacao;
         this.tamanho = tamanho;
     }
+
+    public AreaProtegida() {
+    }
     
     public void exibirInformacoes() {
         JOptionPane.showMessageDialog(null, "Nome: " + nome);

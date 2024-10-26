@@ -21,6 +21,9 @@ public class ProjetoAmbiental {
         this.orcamento = orcamento;
     } 
     
+    public ProjetoAmbiental(){
+        
+    }
     // metodo para adicionarArea(AreaProtegida area)
     
     public boolean adicionarArea(AreaProtegida area){
