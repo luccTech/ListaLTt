@@ -6,7 +6,7 @@ import javax.swing.JOptionPane;
 public class AreaProtegida {
     private String nome;
     private String localizacao;
-    private double tamanho; // hectares
+    private double tamanho; // hectares k
 
     public AreaProtegida(String nome, String localizacao, double tamanho) {
         this.nome = nome;
