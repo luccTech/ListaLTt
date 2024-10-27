@@ -16,12 +16,6 @@ public class AreaProtegida {
 
     public AreaProtegida() {
     }
-    
-    public void exibirInformacoes() {
-        JOptionPane.showMessageDialog(null, "Nome: " + nome);
-        JOptionPane.showMessageDialog(null, "Localização: " + localizacao);
-        JOptionPane.showMessageDialog(null, "Tamanho: " + tamanho + "Hectares");
-    }
 
     public String getNome() {
         return nome;
