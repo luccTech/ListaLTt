@@ -26,16 +26,15 @@ public class ProjetoAmbiental {
     }
     // metodo para adicionarArea(AreaProtegida area)
     
-    public boolean adicionarArea(AreaProtegida area){
-        if (area != null){
-            ListAreaProtegida.add(area);
-            return true;
-        }else{
-            return false;
-        }
+    public void adicionarArea(String nome, String localizacao, double tamanho){
+        AreaProtegida area = new AreaProtegida(nome,localizacao,tamanho);
+        ListAreaProtegida.add(area);
+        System.out.println(area.getNome() + " - " + area.getLocalizacao()+ "-" + area.getTamanho());
     }
     
     // metodo para  listarAreas()
+    
+    
     
     public void listarAreas(){
         for (int i = 0; i < ListAreaProtegida.size(); i++){

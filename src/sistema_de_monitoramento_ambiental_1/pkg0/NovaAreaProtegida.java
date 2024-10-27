@@ -133,23 +133,19 @@ public class NovaAreaProtegida extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSairActionPerformed
 
     private void btnSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalvarActionPerformed
-
-        ap.setNome(TfNome.getText());
-        ap.setLocalizacao(TfLocal.getText());
-        ap.setTamanho(Integer.parseInt(TfTamanho.getText()));
+        String nome = TfNome.getText();
+        String local = TfLocal.getText();
+        double tamanho = Double.parseDouble(TfTamanho.getText());
+        pa.adicionarArea(nome, local, tamanho);
         
+        JOptionPane.showMessageDialog(null, "Área cadastrada com sucesso.");
+        TfNome.setText("");
+        TfLocal.setText("");
+        TfTamanho.setText("");
+        TfNome.requestFocus();
         
-        // testar se salvou.
+        JOptionPane.showMessageDialog(null, "Erro ao cadastrar área");
         
-        if (pa.adicionarArea(ap)){
-            JOptionPane.showMessageDialog(null, "Área cadastrada com sucesso.");
-            TfNome.setText("");
-            TfLocal.setText("");
-            TfTamanho.setText("");
-            TfNome.requestFocus();
-        }else{
-            JOptionPane.showMessageDialog(null, "Erro ao cadastrar área");
-        }
     }//GEN-LAST:event_btnSalvarActionPerformed
 
     private void btnDadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDadosActionPerformed
