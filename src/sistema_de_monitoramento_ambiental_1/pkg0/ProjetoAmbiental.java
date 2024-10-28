@@ -62,19 +62,20 @@ public class ProjetoAmbiental {
     
     // metodo para  adicionarVoluntario(Voluntario voluntario)
     
-    public boolean  adicionarVoluntario(Voluntario voluntario){
-        if (voluntario != null){
-            ListVoluntario.add(voluntario);
-            return true;
-        }else{
-            return false;
-        }
+    public void  adicionarVoluntario(String nome, int idade, String cidade){
+        Voluntario volun = new Voluntario();
+        ListVoluntario.add(volun);
+        System.out.println("Nome: " + volun.getNome() + " - Idade: " + volun.getIdade()+ " - Cidade: " + volun.getCidade());
     }
     
     // metodo para  listarVoluntarios()
     
     public void listarVoluntarios(){
-        
+        for (int i = 0; i < ListVoluntario.size(); i++){
+            System.out.println("Nome: \t" + ListVoluntario.get(i).getNome());
+            System.out.println("Idade: \t" + ListVoluntario.get(i).getIdade());
+            System.out.println("Cidade: \t" + ListVoluntario.get(i).getCidade());
+        }
     }
     
     // metodo para  adicionarEspecie(Especie especie)

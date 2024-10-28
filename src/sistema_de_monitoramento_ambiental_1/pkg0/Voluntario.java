@@ -14,6 +14,9 @@ public class Voluntario {
         this.idade = idade;
         this.cidade = cidade;
     }
+    
+    public Voluntario() {
+    }
 
     public void exibirInformacoes() {
         JOptionPane.showMessageDialog(null, "Data: " + nome);
