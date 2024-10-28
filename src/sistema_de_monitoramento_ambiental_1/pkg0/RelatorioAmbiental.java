@@ -14,6 +14,9 @@ public class RelatorioAmbiental {
         this.responsavel = responsavel;
         this.conteudo = conteudo;
     }
+    public RelatorioAmbiental() {
+
+    }
     
     public void exibirInformacoes() {
         JOptionPane.showMessageDialog(null, "Data: " + data);

@@ -44,21 +44,21 @@ public class ProjetoAmbiental {
     
     // metodo para  adicionarRelatorio(RelatorioAmbiental relatorio)
     
-    public boolean adicionarRelatorio(RelatorioAmbiental relatorio){
-        if (relatorio != null){
-            ListRelatorioAmbiental.add(relatorio);
-            return true;
-        }else{
-            return false;
-        }
+    public void adicionarRelatorio(String data, String responsavel, String conteudo){
+        RelatorioAmbiental relatorio = new RelatorioAmbiental(data, responsavel, conteudo);
+        ListRelatorioAmbiental.add(relatorio);
+        System.out.println("Data: " + relatorio.getData() + " - Responsavel: " + relatorio.getResponsavel()+ " - Conteudo: " + relatorio.getConteudo());
     }
     
     // metodo para  listarRelatorios() 
     
     public void listarRelatorios(){
-        
+        for (int i = 0; i < ListRelatorioAmbiental.size(); i++){
+            System.out.println("Data: \t" + ListRelatorioAmbiental.get(i).getData());
+            System.out.println("Responsavel: \t" + ListRelatorioAmbiental.get(i).getResponsavel());
+            System.out.println("Conteudo: \t" + ListRelatorioAmbiental.get(i).getConteudo());
+        }
     }
-    
     
     // metodo para  adicionarVoluntario(Voluntario voluntario)
     
