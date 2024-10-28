@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
  */
 public class NovaEspecie extends javax.swing.JFrame {
 
-    ProjetoAmbiental pa = new ProjetoAmbiental();
+    AreaProtegida pa = new AreaProtegida();
     String nomeCientifico;
     String nomePopular;
     String categoria;

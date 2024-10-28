@@ -13,7 +13,6 @@ public class ProjetoAmbiental {
     private ArrayList<AreaProtegida> ListAreaProtegida = new ArrayList<>();
     private ArrayList<RelatorioAmbiental> ListRelatorioAmbiental = new ArrayList<>();
     private ArrayList<Voluntario> ListVoluntario = new ArrayList<>();
-    private ArrayList<Especie> ListEspecie = new ArrayList<>();
 
     public ProjetoAmbiental(String nome, String descricao, double orcamento) {
         this.nome = nome;
@@ -77,25 +76,6 @@ public class ProjetoAmbiental {
             System.out.println("Cidade: \t" + ListVoluntario.get(i).getCidade());
         }
     }
-    
-    // metodo para  adicionarEspecie(Especie especie)
-    
-    public void  adicionarEspecie(String nomeCientifico, String nomePopular, String categoriaRisco){
-        Especie esp = new Especie(nomeCientifico, nomePopular, categoriaRisco);
-        ListEspecie.add(esp);
-        System.out.println("Nome Cientifico: " + esp.getNomeCientifico() + " - Nome Popular: " + esp.getNomePopular()+ " - Categoria de rico: " + esp.getCategoriaRisco());
-    }
-    
-    // metodo para  listarEspecie()
-    
-    public void listarEspecie(){
-        for (int i = 0; i < ListEspecie.size(); i++){
-            System.out.println("Nome Cientifico: \t" + ListEspecie.get(i).getNomeCientifico());
-            System.out.println("Nome Popular: \t" + ListEspecie.get(i).getNomePopular());
-            System.out.println("Categoria de rico: \t" + ListEspecie.get(i).getCategoriaRisco());
-        }
-    }
-    
 
     public void exibirInformacoes() { 
         JOptionPane.showMessageDialog(null, "Nome: " + nome);
