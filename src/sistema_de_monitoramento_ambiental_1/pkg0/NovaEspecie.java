@@ -42,7 +42,7 @@ public class NovaEspecie extends javax.swing.JFrame {
         btnDadosE = new javax.swing.JButton();
         TfCategoria = new javax.swing.JComboBox<>();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         btnSalvarE.setText("Salvar");
         btnSalvarE.addActionListener(new java.awt.event.ActionListener() {
@@ -160,7 +160,8 @@ public class NovaEspecie extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSalvarEActionPerformed
 
     private void btnSairEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSairEActionPerformed
-        System.exit(0);
+        //System.exit(0);
+        this.dispose();
     }//GEN-LAST:event_btnSairEActionPerformed
 
     private void btnDadosEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDadosEActionPerformed

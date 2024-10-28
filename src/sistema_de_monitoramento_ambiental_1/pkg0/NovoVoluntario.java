@@ -42,7 +42,7 @@ public class NovoVoluntario extends javax.swing.JFrame {
         btnSairV = new javax.swing.JButton();
         btnDadosV = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         btnSalvarV.setText("Salvar");
         btnSalvarV.addActionListener(new java.awt.event.ActionListener() {
@@ -162,7 +162,8 @@ public class NovoVoluntario extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSalvarVActionPerformed
 
     private void btnSairVActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSairVActionPerformed
-        System.exit(0);
+        //System.exit(0);
+        this.dispose();
     }//GEN-LAST:event_btnSairVActionPerformed
 
     private void btnDadosVActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDadosVActionPerformed

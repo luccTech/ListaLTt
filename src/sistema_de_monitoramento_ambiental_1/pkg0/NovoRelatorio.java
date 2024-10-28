@@ -41,7 +41,7 @@ public class NovoRelatorio extends javax.swing.JFrame {
         btnSalvar1 = new javax.swing.JButton();
         btnSair1 = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         TextRelatorio.setColumns(20);
         TextRelatorio.setRows(5);
@@ -165,7 +165,8 @@ public class NovoRelatorio extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSalvar1ActionPerformed
 
     private void btnSair1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSair1ActionPerformed
-        System.exit(0);
+        //System.exit(0);
+        this.dispose();
     }//GEN-LAST:event_btnSair1ActionPerformed
 
     /**
