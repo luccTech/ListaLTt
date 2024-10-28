@@ -63,7 +63,7 @@ public class ProjetoAmbiental {
     // metodo para  adicionarVoluntario(Voluntario voluntario)
     
     public void  adicionarVoluntario(String nome, int idade, String cidade){
-        Voluntario volun = new Voluntario();
+        Voluntario volun = new Voluntario(nome, idade, cidade);
         ListVoluntario.add(volun);
         System.out.println("Nome: " + volun.getNome() + " - Idade: " + volun.getIdade()+ " - Cidade: " + volun.getCidade());
     }
@@ -80,8 +80,8 @@ public class ProjetoAmbiental {
     
     // metodo para  adicionarEspecie(Especie especie)
     
-    public void  adicionarEspecie(String nomeCientifico, int nomePopular, String categoriaRisco){
-        Especie esp = new Especie();
+    public void  adicionarEspecie(String nomeCientifico, String nomePopular, String categoriaRisco){
+        Especie esp = new Especie(nomeCientifico, nomePopular, categoriaRisco);
         ListEspecie.add(esp);
         System.out.println("Nome Cientifico: " + esp.getNomeCientifico() + " - Nome Popular: " + esp.getNomePopular()+ " - Categoria de rico: " + esp.getCategoriaRisco());
     }

@@ -6,10 +6,10 @@ import javax.swing.JOptionPane;
 
 public class Especie {
     private String nomeCientifico;
-    private int nomePopular;
+    private String nomePopular;
     private String categoriaRisco; // Vulneravel ou em perigo.
 
-    public Especie(String nomeCientifico, int nomePopular, String categoriaRisco) {
+    public Especie(String nomeCientifico, String nomePopular, String categoriaRisco) {
         this.nomeCientifico = nomeCientifico;
         this.nomePopular = nomePopular;
         this.categoriaRisco = categoriaRisco;
@@ -32,11 +32,11 @@ public class Especie {
         this.nomeCientifico = nomeCientifico;
     }
 
-    public int getNomePopular() {
+    public String getNomePopular() {
         return nomePopular;
     }
 
-    public void setNomePopular(int nomePopular) {
+    public void setNomePopular(String nomePopular) {
         this.nomePopular = nomePopular;
     }
 

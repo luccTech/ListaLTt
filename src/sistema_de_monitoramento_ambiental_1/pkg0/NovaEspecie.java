@@ -13,8 +13,8 @@ import javax.swing.JOptionPane;
 public class NovaEspecie extends javax.swing.JFrame {
 
     ProjetoAmbiental pa = new ProjetoAmbiental();
-    String nomeC;
-    String nomeP;
+    String nomeCientifico;
+    String nomePopular;
     String categoria;
     
     public NovaEspecie() {
@@ -144,13 +144,13 @@ public class NovaEspecie extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSalvarEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalvarEActionPerformed
-        nomeC = String.valueOf(TfNomeC.getText());
-        nomeP = String.valueOf(TfNomeP.getText());
-        categoria = String.valueOf(TfCategoria.getToolTipText());
-        TextAreaE.append("Nome Cientifico: \t" + nomeC + "\n");
-        TextAreaE.append("Nome Popular: \t" + nomeP + "\n");
+        nomeCientifico = String.valueOf(TfNomeC.getText());
+        nomePopular = String.valueOf(TfNomeP.getText());
+        categoria = String.valueOf(TfCategoria.getSelectedItem().toString());  // para pegar dados da comboBox
+        TextAreaE.append("Nome Cientifico: \t" + nomeCientifico + "\n");
+        TextAreaE.append("Nome Popular: \t" + nomePopular + "\n");
         TextAreaE.append("Categoria: \t" + categoria + "\n \n" );
-        pa.adicionarEspecie(nomeC, SOMEBITS, categoria);
+        pa.adicionarEspecie(nomeCientifico, nomePopular, categoria);
 
         JOptionPane.showMessageDialog(null, "Especie cadastrada com sucesso.");
         TfNomeC.setText("");
