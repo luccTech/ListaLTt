@@ -80,19 +80,20 @@ public class ProjetoAmbiental {
     
     // metodo para  adicionarEspecie(Especie especie)
     
-    public boolean  adicionarEspecie(Especie especie){
-        if (especie != null){
-            ListEspecie.add(especie);
-            return true;
-        }else{
-            return false;
-        }
+    public void  adicionarEspecie(String nomeCientifico, int nomePopular, String categoriaRisco){
+        Especie esp = new Especie();
+        ListEspecie.add(esp);
+        System.out.println("Nome Cientifico: " + esp.getNomeCientifico() + " - Nome Popular: " + esp.getNomePopular()+ " - Categoria de rico: " + esp.getCategoriaRisco());
     }
     
     // metodo para  listarEspecie()
     
     public void listarEspecie(){
-        
+        for (int i = 0; i < ListEspecie.size(); i++){
+            System.out.println("Nome Cientifico: \t" + ListEspecie.get(i).getNomeCientifico());
+            System.out.println("Nome Popular: \t" + ListEspecie.get(i).getNomePopular());
+            System.out.println("Categoria de rico: \t" + ListEspecie.get(i).getCategoriaRisco());
+        }
     }
     
 

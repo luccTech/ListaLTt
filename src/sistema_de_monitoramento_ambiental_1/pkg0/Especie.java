@@ -14,6 +14,8 @@ public class Especie {
         this.nomePopular = nomePopular;
         this.categoriaRisco = categoriaRisco;
     }
+    public Especie() {
+    }
 
     
     public void exibirInformacoes() {
