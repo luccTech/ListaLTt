@@ -42,6 +42,7 @@ public class NovaAreaProtegida extends javax.swing.JFrame {
         TextArea = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Cadastro de Áreas Protegidas");
 
         jLabel1.setText("Nome: ");
 
@@ -143,6 +144,7 @@ public class NovaAreaProtegida extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSairActionPerformed

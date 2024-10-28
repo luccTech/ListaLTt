@@ -42,6 +42,7 @@ public class NovoRelatorio extends javax.swing.JFrame {
         btnSair1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Cadastro de Relatorios");
 
         TextRelatorio.setColumns(20);
         TextRelatorio.setRows(5);
@@ -140,6 +141,7 @@ public class NovoRelatorio extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnDados1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDados1ActionPerformed

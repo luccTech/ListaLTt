@@ -43,6 +43,7 @@ public class NovaEspecie extends javax.swing.JFrame {
         TfCategoria = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Cadastro de Especies");
 
         btnSalvarE.setText("Salvar");
         btnSalvarE.addActionListener(new java.awt.event.ActionListener() {
@@ -141,6 +142,7 @@ public class NovaEspecie extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSalvarEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalvarEActionPerformed
