@@ -19,7 +19,6 @@ public class NovaEspecie extends javax.swing.JFrame {
     
     public NovaEspecie() {
         initComponents();
-        TextAreaE.setVisible(false);
     }
 
     /**
@@ -42,9 +41,11 @@ public class NovaEspecie extends javax.swing.JFrame {
         btnSairE = new javax.swing.JButton();
         btnDadosE = new javax.swing.JButton();
         TfCategoria = new javax.swing.JComboBox<>();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Cadastro de Especies");
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnSalvarE.setText("Salvar");
         btnSalvarE.addActionListener(new java.awt.event.ActionListener() {
@@ -52,16 +53,24 @@ public class NovaEspecie extends javax.swing.JFrame {
                 btnSalvarEActionPerformed(evt);
             }
         });
+        getContentPane().add(btnSalvarE, new org.netbeans.lib.awtextra.AbsoluteConstraints(122, 259, 103, -1));
 
         TextAreaE.setColumns(20);
         TextAreaE.setRows(5);
         jScrollPane1.setViewportView(TextAreaE);
 
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 18, -1, 205));
+
         jLabel1.setText("Categoria de Risco:");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(29, 192, -1, -1));
 
         jLabel2.setText("Nome Popular:");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(29, 112, -1, -1));
 
         jLabel3.setText("Nome Cientifico:");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 38, -1, -1));
+        getContentPane().add(TfNomeC, new org.netbeans.lib.awtextra.AbsoluteConstraints(122, 34, 230, -1));
+        getContentPane().add(TfNomeP, new org.netbeans.lib.awtextra.AbsoluteConstraints(124, 108, 228, -1));
 
         btnSairE.setText("Sair");
         btnSairE.addActionListener(new java.awt.event.ActionListener() {
@@ -69,6 +78,7 @@ public class NovaEspecie extends javax.swing.JFrame {
                 btnSairEActionPerformed(evt);
             }
         });
+        getContentPane().add(btnSairE, new org.netbeans.lib.awtextra.AbsoluteConstraints(433, 301, 103, -1));
 
         btnDadosE.setText("Ver Dados");
         btnDadosE.addActionListener(new java.awt.event.ActionListener() {
@@ -76,71 +86,11 @@ public class NovaEspecie extends javax.swing.JFrame {
                 btnDadosEActionPerformed(evt);
             }
         });
+        getContentPane().add(btnDadosE, new org.netbeans.lib.awtextra.AbsoluteConstraints(433, 259, 103, -1));
 
         TfCategoria.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Vunerável", "Em Perigo" }));
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap(25, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(btnSalvarE, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(127, 127, 127))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(jLabel3)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(TfNomeC, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(jLabel1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(TfCategoria, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(jLabel2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(TfNomeP, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(18, 18, 18)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(14, 14, 14))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnDadosE, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnSairE, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(71, 71, 71))))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(34, 34, 34)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(TfNomeC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel3))
-                        .addGap(50, 50, 50)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(TfNomeP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel2))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel1)
-                            .addComponent(TfCategoria, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(46, 46, 46)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnDadosE)
-                    .addComponent(btnSalvarE))
-                .addGap(18, 18, 18)
-                .addComponent(btnSairE)
-                .addGap(21, 21, 21))
-        );
+        getContentPane().add(TfCategoria, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 187, 202, -1));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 0, 610, 350));
 
         pack();
         setLocationRelativeTo(null);
@@ -168,7 +118,7 @@ public class NovaEspecie extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSairEActionPerformed
 
     private void btnDadosEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDadosEActionPerformed
-        TextAreaE.setVisible(true);
+
         pa.listarEspecie();
         JOptionPane.showMessageDialog(rootPane, TextAreaE.getText());
     }//GEN-LAST:event_btnDadosEActionPerformed
@@ -219,6 +169,7 @@ public class NovaEspecie extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 }
