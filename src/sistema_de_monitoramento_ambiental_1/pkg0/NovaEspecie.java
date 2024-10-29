@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
  * @author lucas
  */
 public class NovaEspecie extends javax.swing.JFrame {
-
+    
     AreaProtegida pa = new AreaProtegida();
     String nomeCientifico;
     String nomePopular;
@@ -19,6 +19,7 @@ public class NovaEspecie extends javax.swing.JFrame {
     
     public NovaEspecie() {
         initComponents();
+        TextAreaE.setVisible(false);
     }
 
     /**
@@ -167,6 +168,7 @@ public class NovaEspecie extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSairEActionPerformed
 
     private void btnDadosEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDadosEActionPerformed
+        TextAreaE.setVisible(true);
         pa.listarEspecie();
         JOptionPane.showMessageDialog(rootPane, TextAreaE.getText());
     }//GEN-LAST:event_btnDadosEActionPerformed
