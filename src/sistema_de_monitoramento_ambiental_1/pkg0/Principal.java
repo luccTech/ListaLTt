@@ -28,27 +28,55 @@ public class Principal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        seletor = new javax.swing.JComboBox<>();
         jButton1 = new javax.swing.JButton();
+        seletor = new javax.swing.JComboBox<>();
+        jLabel1 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Tela de cadastro");
+        setTitle("Tela inicial");
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setText("Escolha uma opção:");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(233, 113, -1, -1));
-
-        seletor.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cadastrar Area Protegida", "Cadastrar Voluntario", "Cadastrar Relatorio", "Cadastrar Especie", "Calcular Orçamento" }));
-        getContentPane().add(seletor, new org.netbeans.lib.awtextra.AbsoluteConstraints(197, 147, 204, -1));
-
-        jButton1.setText("Ok");
+        jButton1.setBackground(new java.awt.Color(0, 153, 102));
+        jButton1.setFont(new java.awt.Font("Georgia", 0, 12)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setText("Iniciar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(263, 191, 56, -1));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 200, 100, -1));
+
+        seletor.setBackground(new java.awt.Color(0, 153, 102));
+        seletor.setFont(new java.awt.Font("Georgia", 0, 12)); // NOI18N
+        seletor.setForeground(new java.awt.Color(255, 255, 255));
+        seletor.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cadastrar Area Protegida", "Cadastrar Voluntario", "Cadastrar Relatorio", "Cadastrar Especie", "Calcular Orçamento" }));
+        getContentPane().add(seletor, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 150, 210, -1));
+
+        jLabel1.setFont(new java.awt.Font("Gill Sans Ultra Bold", 0, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 153, 102));
+        jLabel1.setText("Escolha uma opção:");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 110, -1, -1));
+
+        jButton2.setBackground(new java.awt.Color(0, 153, 102));
+        jButton2.setFont(new java.awt.Font("Georgia", 0, 12)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton2.setText("Sair");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 200, 100, -1));
+
+        jPanel1.setBackground(new java.awt.Color(204, 255, 255));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 90, 230, 160));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sistema_de_monitoramento_ambiental_1/pkg0/imagens/Captura de tela 2024-10-28 232641.png"))); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
         setLocationRelativeTo(null);
@@ -76,6 +104,10 @@ public class Principal extends javax.swing.JFrame {
             }
         }  
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -114,7 +146,10 @@ public class Principal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JComboBox<String> seletor;
     // End of variables declaration//GEN-END:variables
 }
