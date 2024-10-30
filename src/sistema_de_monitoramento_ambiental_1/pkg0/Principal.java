@@ -4,6 +4,8 @@
  */
 package sistema_de_monitoramento_ambiental_1.pkg0;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author lucas
@@ -98,7 +100,7 @@ public class Principal extends javax.swing.JFrame {
                     }else{
                         
                     }if(opcao == "Calcular Orçamento"){
-                        
+                        JOptionPane.showMessageDialog(null, "Orçamento Total: ");
                     }
                 }
             }
