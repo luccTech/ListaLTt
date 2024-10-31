@@ -40,24 +40,36 @@ public class NovaAreaProtegida extends javax.swing.JFrame {
         btnSalvar = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         TextArea = new javax.swing.JTextArea();
+        jPanel1 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Cadastro de Áreas Protegidas");
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel1.setFont(new java.awt.Font("Gill Sans Ultra Bold", 0, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 153, 102));
         jLabel1.setText("Nome: ");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 33, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 50, -1, -1));
 
+        jLabel2.setFont(new java.awt.Font("Gill Sans Ultra Bold", 0, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 153, 102));
         jLabel2.setText("Localização: ");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 122, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, -1, -1));
 
+        jLabel3.setFont(new java.awt.Font("Gill Sans Ultra Bold", 0, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 153, 102));
         jLabel3.setText("Tamanho: ");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 218, -1, -1));
-        getContentPane().add(TfLocal, new org.netbeans.lib.awtextra.AbsoluteConstraints(121, 122, 230, -1));
-        getContentPane().add(TfNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(123, 43, 228, -1));
-        getContentPane().add(TfTamanho, new org.netbeans.lib.awtextra.AbsoluteConstraints(121, 214, 230, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 190, -1, 20));
+        getContentPane().add(TfLocal, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 140, 270, -1));
+        getContentPane().add(TfNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 70, 270, -1));
+        getContentPane().add(TfTamanho, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 210, 270, -1));
 
+        btnSair.setBackground(new java.awt.Color(0, 153, 102));
+        btnSair.setFont(new java.awt.Font("Georgia", 0, 12)); // NOI18N
+        btnSair.setForeground(new java.awt.Color(255, 255, 255));
         btnSair.setText("Sair");
         btnSair.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -66,6 +78,9 @@ public class NovaAreaProtegida extends javax.swing.JFrame {
         });
         getContentPane().add(btnSair, new org.netbeans.lib.awtextra.AbsoluteConstraints(431, 306, 103, -1));
 
+        btnDados.setBackground(new java.awt.Color(0, 153, 102));
+        btnDados.setFont(new java.awt.Font("Georgia", 0, 12)); // NOI18N
+        btnDados.setForeground(new java.awt.Color(255, 255, 255));
         btnDados.setText("Ver Dados");
         btnDados.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -74,13 +89,16 @@ public class NovaAreaProtegida extends javax.swing.JFrame {
         });
         getContentPane().add(btnDados, new org.netbeans.lib.awtextra.AbsoluteConstraints(431, 264, 103, -1));
 
+        btnSalvar.setBackground(new java.awt.Color(0, 153, 102));
+        btnSalvar.setFont(new java.awt.Font("Georgia", 0, 12)); // NOI18N
+        btnSalvar.setForeground(new java.awt.Color(255, 255, 255));
         btnSalvar.setText("Salvar");
         btnSalvar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSalvarActionPerformed(evt);
             }
         });
-        getContentPane().add(btnSalvar, new org.netbeans.lib.awtextra.AbsoluteConstraints(121, 264, 103, -1));
+        getContentPane().add(btnSalvar, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 260, 103, -1));
 
         TextArea.setColumns(20);
         TextArea.setRows(5);
@@ -88,8 +106,17 @@ public class NovaAreaProtegida extends javax.swing.JFrame {
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(369, 33, -1, 205));
 
+        jPanel1.setBackground(new java.awt.Color(204, 255, 255));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, 290, 60));
+
+        jPanel2.setBackground(new java.awt.Color(204, 255, 255));
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 110, 290, 60));
+
+        jPanel3.setBackground(new java.awt.Color(204, 255, 255));
+        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 180, 290, 60));
+
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sistema_de_monitoramento_ambiental_1/pkg0/imagens/Captura de tela 2024-10-28 232641.png"))); // NOI18N
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 610, 350));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 630, 350));
 
         pack();
         setLocationRelativeTo(null);
@@ -169,6 +196,9 @@ public class NovaAreaProtegida extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 }
