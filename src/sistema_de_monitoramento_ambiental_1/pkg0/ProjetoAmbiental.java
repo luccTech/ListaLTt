@@ -31,7 +31,7 @@ public class ProjetoAmbiental {
         System.out.println("Nome: " + area.getNome() + " - Localização: " + area.getLocalizacao()+ " - Tamanho: " + area.getTamanho());
     }
     
-    // metodo para  listarAreas()
+    // metodo para  listarAreas() exibirInformaçoes()
     
     public void listarAreas(){
         for (int i = 0; i < ListAreaProtegida.size(); i++){

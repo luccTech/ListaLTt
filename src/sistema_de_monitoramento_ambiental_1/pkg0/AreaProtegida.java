@@ -65,7 +65,7 @@ public class AreaProtegida {
         for (int i = 0; i < ListEspecie.size(); i++){
             System.out.println("Nome Cientifico: \t" + ListEspecie.get(i).getNomeCientifico());
             System.out.println("Nome Popular: \t" + ListEspecie.get(i).getNomePopular());
-            System.out.println("Categoria de rico: \t" + ListEspecie.get(i).getCategoriaRisco());
+            System.out.println("Categoria de risco: \t" + ListEspecie.get(i).getCategoriaRisco());
         }
     }
 }

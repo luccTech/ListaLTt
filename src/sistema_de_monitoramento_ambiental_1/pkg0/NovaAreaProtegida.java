@@ -156,7 +156,7 @@ public class NovaAreaProtegida extends javax.swing.JFrame {
         nome = TfNome.getText();
         local = TfLocal.getText();
         tamanho = Double.parseDouble(TfTamanho.getText());
-        TextArea.append("Nome: \t" + nome + "\n");
+        TextArea.append("Nome: \t" + nome + "\n"); //setar informaçãoes no TextArea
         TextArea.append("Localização: \t" + local + "\n");
         TextArea.append("Tamanho: \t" + String.valueOf(tamanho) + "\n \n" );
         pa.adicionarArea(nome, local, tamanho);
