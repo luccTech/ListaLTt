@@ -4,6 +4,7 @@
  */
 package sistema_de_monitoramento_ambiental_1.pkg0;
 
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 /**
@@ -101,7 +102,13 @@ public class Principal extends javax.swing.JFrame {
                     }else{
                         
                     }if(opcao == "Calcular Orçamento"){
-                        JOptionPane.showMessageDialog(null, "O orçamento total do prejeto é :"+area.getOr()+ "R$");
+                        if(area.getOr() == 0.0){
+                            JOptionPane.showMessageDialog(null, "Ainda não existe áreas protegidas cadastradas.\n Cadastre-as para ver o orçamento", "Erro", 2);
+                        }else{
+                            ImageIcon icon = new ImageIcon("C:\\Users\\lucas\\OneDrive\\Documentos\\aprendendo java\\ListaLTt\\src\\sistema_de_monitoramento_ambiental_1\\pkg0\\imagens\\real_brasileiro.png");
+                        
+                            JOptionPane.showMessageDialog(null, "O orçamento total do prejeto é :"+area.getOr()+ "R$", "Orçamento", HEIGHT, icon);
+                        }             
                     }
                 }
             }
