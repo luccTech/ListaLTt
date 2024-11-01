@@ -15,6 +15,7 @@ public class NovaAreaProtegida extends javax.swing.JFrame {
     String nome;
     String local;
     double tamanho;
+    double or;
     
     public NovaAreaProtegida() {
         initComponents();
@@ -141,7 +142,7 @@ public class NovaAreaProtegida extends javax.swing.JFrame {
         TfLocal.setText("");
         TfTamanho.setText("");
         TfNome.requestFocus();
-        
+        or = pa.calcularOrcamentoTotal(tamanho);
     }//GEN-LAST:event_btnSalvarActionPerformed
 
     private void btnDadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDadosActionPerformed
@@ -149,6 +150,14 @@ public class NovaAreaProtegida extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(rootPane, TextArea.getText());
     }//GEN-LAST:event_btnDadosActionPerformed
 
+    public double getOr() {
+        return or;
+    }
+
+    public void setOr(double or) {
+        this.or = or;
+    }
+    
     /**
      * @param args the command line arguments
      */

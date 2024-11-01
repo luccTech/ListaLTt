@@ -16,6 +16,7 @@ public class Principal extends javax.swing.JFrame {
     NovoRelatorio relat = new NovoRelatorio();
     NovoVoluntario volun = new NovoVoluntario();
     NovaEspecie esp = new NovaEspecie();
+    ProjetoAmbiental projeto = new ProjetoAmbiental();
     
     public Principal() {
         initComponents();
@@ -100,7 +101,7 @@ public class Principal extends javax.swing.JFrame {
                     }else{
                         
                     }if(opcao == "Calcular Orçamento"){
-                        JOptionPane.showMessageDialog(null, "Orçamento Total: ");
+                        JOptionPane.showMessageDialog(null, "O orçamento total do prejeto é :"+area.getOr()+ "R$");
                     }
                 }
             }

@@ -10,19 +10,32 @@ public class ProjetoAmbiental {
     private String nome;
     private String descricao;
     private double orcamento;
+    private double hectare = 3600.0; // supondo que o preço por hectare seja 3600 R$/hectar
     private ArrayList<AreaProtegida> ListAreaProtegida = new ArrayList<>();
     private ArrayList<RelatorioAmbiental> ListRelatorioAmbiental = new ArrayList<>();
     private ArrayList<Voluntario> ListVoluntario = new ArrayList<>();
 
-    public ProjetoAmbiental(String nome, String descricao, double orcamento) {
+    public ProjetoAmbiental(String nome, String descricao, double orcamento, double hectare, ArrayList<AreaProtegida> ListAreaProtegida, ArrayList<RelatorioAmbiental> ListRelatorioAmbiental, ArrayList<Voluntario> ListVoluntario) {
         this.nome = nome;
         this.descricao = descricao;
         this.orcamento = orcamento;
+        this.hectare = hectare;
+        this.ListAreaProtegida = ListAreaProtegida;
+        this.ListRelatorioAmbiental = ListRelatorioAmbiental;
+        this.ListVoluntario = ListVoluntario;
     } 
     
     public ProjetoAmbiental(){
         
     }
+    
+    // 10. Cálculo do Orçamento Total do Projeto
+    
+    public double calcularOrcamentoTotal(double tamanho){
+        orcamento += (hectare * tamanho);
+        return orcamento;
+    }
+    
     // metodo para adicionarArea(AreaProtegida area)
     
     public void adicionarArea(String nome, String localizacao, double tamanho){
