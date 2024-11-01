@@ -2,7 +2,6 @@
 package sistema_de_monitoramento_ambiental_1.pkg0;
 
 import java.util.ArrayList;
-import java.util.List;
 import javax.swing.JOptionPane;
 
 
