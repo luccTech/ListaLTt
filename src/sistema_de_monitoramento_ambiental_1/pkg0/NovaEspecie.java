@@ -93,7 +93,7 @@ public class NovaEspecie extends javax.swing.JFrame {
                 btnSairEActionPerformed(evt);
             }
         });
-        getContentPane().add(btnSairE, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 300, 120, -1));
+        getContentPane().add(btnSairE, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 300, 150, -1));
 
         btnDadosE.setBackground(new java.awt.Color(0, 153, 102));
         btnDadosE.setFont(new java.awt.Font("Georgia", 0, 12)); // NOI18N
@@ -104,7 +104,7 @@ public class NovaEspecie extends javax.swing.JFrame {
                 btnDadosEActionPerformed(evt);
             }
         });
-        getContentPane().add(btnDadosE, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 260, 120, -1));
+        getContentPane().add(btnDadosE, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 260, 150, -1));
 
         TfCategoria.setFont(new java.awt.Font("Georgia", 0, 12)); // NOI18N
         TfCategoria.setForeground(new java.awt.Color(255, 255, 255));

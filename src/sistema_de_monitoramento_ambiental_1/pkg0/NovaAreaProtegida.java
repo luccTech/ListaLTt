@@ -77,7 +77,7 @@ public class NovaAreaProtegida extends javax.swing.JFrame {
                 btnSairActionPerformed(evt);
             }
         });
-        getContentPane().add(btnSair, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 310, 160, -1));
+        getContentPane().add(btnSair, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 300, 180, -1));
 
         btnDados.setBackground(new java.awt.Color(0, 153, 102));
         btnDados.setFont(new java.awt.Font("Georgia", 0, 12)); // NOI18N
@@ -88,7 +88,7 @@ public class NovaAreaProtegida extends javax.swing.JFrame {
                 btnDadosActionPerformed(evt);
             }
         });
-        getContentPane().add(btnDados, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 260, 160, 20));
+        getContentPane().add(btnDados, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 260, 180, 20));
 
         btnSalvar.setBackground(new java.awt.Color(0, 153, 102));
         btnSalvar.setFont(new java.awt.Font("Georgia", 0, 12)); // NOI18N

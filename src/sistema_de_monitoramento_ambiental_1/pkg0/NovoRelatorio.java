@@ -82,7 +82,7 @@ public class NovoRelatorio extends javax.swing.JFrame {
                 btnDados1ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnDados1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 260, 130, -1));
+        getContentPane().add(btnDados1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 260, 150, -1));
 
         btnSalvar1.setBackground(new java.awt.Color(0, 153, 102));
         btnSalvar1.setFont(new java.awt.Font("Georgia", 0, 12)); // NOI18N
@@ -104,7 +104,7 @@ public class NovoRelatorio extends javax.swing.JFrame {
                 btnSair1ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnSair1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 300, 130, -1));
+        getContentPane().add(btnSair1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 300, 150, -1));
 
         jPanel1.setBackground(new java.awt.Color(204, 255, 255));
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, 290, 60));
