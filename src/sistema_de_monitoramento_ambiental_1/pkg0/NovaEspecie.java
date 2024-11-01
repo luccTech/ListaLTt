@@ -4,6 +4,8 @@
  */
 package sistema_de_monitoramento_ambiental_1.pkg0;
 
+import static java.awt.image.ImageObserver.HEIGHT;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 /**
@@ -106,6 +108,7 @@ public class NovaEspecie extends javax.swing.JFrame {
         });
         getContentPane().add(btnDadosE, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 260, 150, -1));
 
+        TfCategoria.setBackground(new java.awt.Color(0, 153, 102));
         TfCategoria.setFont(new java.awt.Font("Georgia", 0, 12)); // NOI18N
         TfCategoria.setForeground(new java.awt.Color(255, 255, 255));
         TfCategoria.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Vunerável", "Em Perigo" }));
@@ -135,8 +138,8 @@ public class NovaEspecie extends javax.swing.JFrame {
         TextAreaE.append("Nome Popular: \t" + nomePopular + "\n");
         TextAreaE.append("Categoria: \t" + categoria + "\n \n" );
         pa.adicionarEspecie(nomeCientifico, nomePopular, categoria);
-
-        JOptionPane.showMessageDialog(null, "Especie cadastrada com sucesso.");
+        ImageIcon icon = new ImageIcon("C:\\Users\\lucas\\OneDrive\\Documentos\\aprendendo java\\ListaLTt\\src\\sistema_de_monitoramento_ambiental_1\\pkg0\\imagens\\verificar.png");
+        JOptionPane.showMessageDialog(null, "Especie cadastrada com sucesso.","",HEIGHT, icon);
         TfNomeC.setText("");
         TfNomeP.setText("");
         TfNomeC.requestFocus();
@@ -151,7 +154,8 @@ public class NovaEspecie extends javax.swing.JFrame {
     private void btnDadosEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDadosEActionPerformed
 
         pa.listarEspecie();
-        JOptionPane.showMessageDialog(rootPane, TextAreaE.getText());
+        ImageIcon icon = new ImageIcon("C:\\Users\\lucas\\OneDrive\\Documentos\\aprendendo java\\ListaLTt\\src\\sistema_de_monitoramento_ambiental_1\\pkg0\\imagens\\biodegradavel.png");
+        JOptionPane.showMessageDialog(rootPane, TextAreaE.getText(), "Especies", HEIGHT, icon);
     }//GEN-LAST:event_btnDadosEActionPerformed
 
     /**

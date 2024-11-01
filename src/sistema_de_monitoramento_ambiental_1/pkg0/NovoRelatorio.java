@@ -4,6 +4,8 @@
  */
 package sistema_de_monitoramento_ambiental_1.pkg0;
 
+import static java.awt.image.ImageObserver.HEIGHT;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 /**
@@ -125,20 +127,23 @@ public class NovoRelatorio extends javax.swing.JFrame {
 
     private void btnDados1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDados1ActionPerformed
         pa.listarRelatorios();
-        JOptionPane.showMessageDialog(rootPane, TextRelatorio.getText());
+        ImageIcon icon = new ImageIcon("C:\\Users\\lucas\\OneDrive\\Documentos\\aprendendo java\\ListaLTt\\src\\sistema_de_monitoramento_ambiental_1\\pkg0\\imagens\\relatorio.png");
+        JOptionPane.showMessageDialog(rootPane, TextRelatorio.getText(), "Relatorios", HEIGHT, icon);
 
     }//GEN-LAST:event_btnDados1ActionPerformed
 
     private void btnSalvar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalvar1ActionPerformed
-        data = TfData.getText();
-        responsavel = TfResp.getText();
-        conteudo = TfConteudo.getText();
+        data = String.valueOf(TfData.getText());
+        responsavel = String.valueOf(TfResp.getText());
+        conteudo = String.valueOf(TfConteudo.getText());
         TextRelatorio.append("Data: \t" + data + "\n");
         TextRelatorio.append("Responsavel: \t" + responsavel + "\n");
         TextRelatorio.append("Conteudo: \t" + conteudo + "\n \n" );
         pa.adicionarRelatorio(data, responsavel, conteudo);
-
-        JOptionPane.showMessageDialog(null, "Relatorio cadastrado com sucesso.");
+        
+        ImageIcon icon = new ImageIcon("C:\\Users\\lucas\\OneDrive\\Documentos\\aprendendo java\\ListaLTt\\src\\sistema_de_monitoramento_ambiental_1\\pkg0\\imagens\\verificar.png");
+        JOptionPane.showMessageDialog(null, "Relatorio cadastrado com sucesso.","",HEIGHT, icon);
+        
         TfData.setText("");
         TfResp.setText("");
         TfConteudo.setText("");

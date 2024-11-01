@@ -4,6 +4,8 @@
  */
 package sistema_de_monitoramento_ambiental_1.pkg0;
 
+import static java.awt.image.ImageObserver.HEIGHT;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 /**
@@ -131,8 +133,10 @@ public class NovoVoluntario extends javax.swing.JFrame {
         TextAreaV.append("Idade: \t" + idade + "\n");
         TextAreaV.append("Cidade: \t" + cidade + "\n \n" );
         pa.adicionarVoluntario(nome, idade, cidade);
-
-        JOptionPane.showMessageDialog(null, "Voluntario cadastrado com sucesso.");
+        
+        ImageIcon icon = new ImageIcon("C:\\Users\\lucas\\OneDrive\\Documentos\\aprendendo java\\ListaLTt\\src\\sistema_de_monitoramento_ambiental_1\\pkg0\\imagens\\verificar.png");
+        JOptionPane.showMessageDialog(null, "Voluntario cadastrado com sucesso.","",HEIGHT, icon);
+        
         TfNomeV.setText("");
         TfIdadeV.setText("");
         TfCidade.setText("");
@@ -147,7 +151,9 @@ public class NovoVoluntario extends javax.swing.JFrame {
 
     private void btnDadosVActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDadosVActionPerformed
         pa.listarVoluntarios();
-        JOptionPane.showMessageDialog(rootPane, TextAreaV.getText());
+        
+        ImageIcon icon = new ImageIcon("C:\\Users\\lucas\\OneDrive\\Documentos\\aprendendo java\\ListaLTt\\src\\sistema_de_monitoramento_ambiental_1\\pkg0\\imagens\\comunidade.png");
+        JOptionPane.showMessageDialog(rootPane, TextAreaV.getText(), "Especies", HEIGHT, icon);
     }//GEN-LAST:event_btnDadosVActionPerformed
 
     /**

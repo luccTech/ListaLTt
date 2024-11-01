@@ -41,7 +41,7 @@ public class ProjetoAmbiental {
     public void adicionarArea(String nome, String localizacao, double tamanho){
         AreaProtegida area = new AreaProtegida(nome,localizacao,tamanho);
         ListAreaProtegida.add(area);
-        System.out.println("Nome: " + area.getNome() + " - Localização: " + area.getLocalizacao()+ " - Tamanho: " + area.getTamanho());
+        System.out.println("Nome: " + area.getNome() + " - Localização: " + area.getLocalizacao()+ " - Tamanho: " + area.getTamanho()+ " Hectares");
     }
     
     // metodo para  listarAreas() exibirInformaçoes()
@@ -50,7 +50,7 @@ public class ProjetoAmbiental {
         for (int i = 0; i < ListAreaProtegida.size(); i++){
             System.out.println("Nome: \t" + ListAreaProtegida.get(i).getNome());
             System.out.println("Localização: \t" + ListAreaProtegida.get(i).getLocalizacao());
-            System.out.println("Tamanho: \t" + ListAreaProtegida.get(i).getTamanho());
+            System.out.println("Tamanho: \t" + ListAreaProtegida.get(i).getTamanho()+ " Hectares");
         }
     }
     
