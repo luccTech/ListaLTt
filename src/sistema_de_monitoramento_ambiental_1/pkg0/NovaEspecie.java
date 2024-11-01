@@ -41,12 +41,18 @@ public class NovaEspecie extends javax.swing.JFrame {
         btnSairE = new javax.swing.JButton();
         btnDadosE = new javax.swing.JButton();
         TfCategoria = new javax.swing.JComboBox<>();
+        jPanel1 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Cadastro de Especies");
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        btnSalvarE.setBackground(new java.awt.Color(0, 153, 102));
+        btnSalvarE.setFont(new java.awt.Font("Georgia", 0, 12)); // NOI18N
+        btnSalvarE.setForeground(new java.awt.Color(255, 255, 255));
         btnSalvarE.setText("Salvar");
         btnSalvarE.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -59,38 +65,63 @@ public class NovaEspecie extends javax.swing.JFrame {
         TextAreaE.setRows(5);
         jScrollPane1.setViewportView(TextAreaE);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 18, -1, 205));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 40, -1, 205));
 
+        jLabel1.setFont(new java.awt.Font("Gill Sans Ultra Bold", 0, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 153, 102));
         jLabel1.setText("Categoria de Risco:");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(29, 192, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 180, -1, -1));
 
+        jLabel2.setFont(new java.awt.Font("Gill Sans Ultra Bold", 0, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 153, 102));
         jLabel2.setText("Nome Popular:");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(29, 112, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 110, -1, -1));
 
+        jLabel3.setFont(new java.awt.Font("Gill Sans Ultra Bold", 0, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 153, 102));
         jLabel3.setText("Nome Cientifico:");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 38, -1, -1));
-        getContentPane().add(TfNomeC, new org.netbeans.lib.awtextra.AbsoluteConstraints(122, 34, 230, -1));
-        getContentPane().add(TfNomeP, new org.netbeans.lib.awtextra.AbsoluteConstraints(124, 108, 228, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 50, -1, -1));
+        getContentPane().add(TfNomeC, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 70, 270, -1));
+        getContentPane().add(TfNomeP, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 130, 270, -1));
 
+        btnSairE.setBackground(new java.awt.Color(0, 153, 102));
+        btnSairE.setFont(new java.awt.Font("Georgia", 0, 12)); // NOI18N
+        btnSairE.setForeground(new java.awt.Color(255, 255, 255));
         btnSairE.setText("Sair");
         btnSairE.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSairEActionPerformed(evt);
             }
         });
-        getContentPane().add(btnSairE, new org.netbeans.lib.awtextra.AbsoluteConstraints(433, 301, 103, -1));
+        getContentPane().add(btnSairE, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 300, 120, -1));
 
-        btnDadosE.setText("Ver Dados");
+        btnDadosE.setBackground(new java.awt.Color(0, 153, 102));
+        btnDadosE.setFont(new java.awt.Font("Georgia", 0, 12)); // NOI18N
+        btnDadosE.setForeground(new java.awt.Color(255, 255, 255));
+        btnDadosE.setText("Mostrar Especies");
         btnDadosE.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDadosEActionPerformed(evt);
             }
         });
-        getContentPane().add(btnDadosE, new org.netbeans.lib.awtextra.AbsoluteConstraints(433, 259, 103, -1));
+        getContentPane().add(btnDadosE, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 260, 120, -1));
 
+        TfCategoria.setFont(new java.awt.Font("Georgia", 0, 12)); // NOI18N
+        TfCategoria.setForeground(new java.awt.Color(255, 255, 255));
         TfCategoria.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Vunerável", "Em Perigo" }));
-        getContentPane().add(TfCategoria, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 187, 202, -1));
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 0, 610, 350));
+        getContentPane().add(TfCategoria, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 200, 240, -1));
+
+        jPanel1.setBackground(new java.awt.Color(204, 255, 255));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, 290, 60));
+
+        jPanel2.setBackground(new java.awt.Color(204, 255, 255));
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 110, 290, 60));
+
+        jPanel3.setBackground(new java.awt.Color(204, 255, 255));
+        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 180, 290, 60));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sistema_de_monitoramento_ambiental_1/pkg0/imagens/Captura de tela 2024-10-28 232641.png"))); // NOI18N
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 0, 630, 350));
 
         pack();
         setLocationRelativeTo(null);
@@ -170,6 +201,9 @@ public class NovaEspecie extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 }

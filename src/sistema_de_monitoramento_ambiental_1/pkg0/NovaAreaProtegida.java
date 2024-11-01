@@ -77,18 +77,18 @@ public class NovaAreaProtegida extends javax.swing.JFrame {
                 btnSairActionPerformed(evt);
             }
         });
-        getContentPane().add(btnSair, new org.netbeans.lib.awtextra.AbsoluteConstraints(431, 306, 103, -1));
+        getContentPane().add(btnSair, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 310, 160, -1));
 
         btnDados.setBackground(new java.awt.Color(0, 153, 102));
         btnDados.setFont(new java.awt.Font("Georgia", 0, 12)); // NOI18N
         btnDados.setForeground(new java.awt.Color(255, 255, 255));
-        btnDados.setText("Ver Dados");
+        btnDados.setText("Mostrar Areas Protegidas");
         btnDados.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDadosActionPerformed(evt);
             }
         });
-        getContentPane().add(btnDados, new org.netbeans.lib.awtextra.AbsoluteConstraints(431, 264, 103, -1));
+        getContentPane().add(btnDados, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 260, 160, 20));
 
         btnSalvar.setBackground(new java.awt.Color(0, 153, 102));
         btnSalvar.setFont(new java.awt.Font("Georgia", 0, 12)); // NOI18N
