@@ -63,6 +63,7 @@ public class NovoVoluntario extends javax.swing.JFrame {
         });
         getContentPane().add(btnSalvarV, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 260, 103, -1));
 
+        TextAreaV.setEditable(false);
         TextAreaV.setColumns(20);
         TextAreaV.setRows(5);
         jScrollPane1.setViewportView(TextAreaV);

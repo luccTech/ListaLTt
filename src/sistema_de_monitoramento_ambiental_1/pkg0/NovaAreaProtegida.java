@@ -102,6 +102,7 @@ public class NovaAreaProtegida extends javax.swing.JFrame {
         });
         getContentPane().add(btnSalvar, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 260, 103, -1));
 
+        TextArea.setEditable(false);
         TextArea.setColumns(20);
         TextArea.setRows(5);
         jScrollPane1.setViewportView(TextArea);
@@ -130,6 +131,7 @@ public class NovaAreaProtegida extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSairActionPerformed
 
     private void btnSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalvarActionPerformed
+        TfNome.requestFocus();
         nome = String.valueOf(TfNome.getText());
         local = String.valueOf(TfLocal.getText());
         tamanho = Double.parseDouble(TfTamanho.getText());

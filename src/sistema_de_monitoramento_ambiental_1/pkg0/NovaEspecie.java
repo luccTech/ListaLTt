@@ -63,6 +63,7 @@ public class NovaEspecie extends javax.swing.JFrame {
         });
         getContentPane().add(btnSalvarE, new org.netbeans.lib.awtextra.AbsoluteConstraints(122, 259, 103, -1));
 
+        TextAreaE.setEditable(false);
         TextAreaE.setColumns(20);
         TextAreaE.setRows(5);
         jScrollPane1.setViewportView(TextAreaE);

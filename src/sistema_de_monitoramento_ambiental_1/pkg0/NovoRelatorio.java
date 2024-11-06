@@ -51,6 +51,7 @@ public class NovoRelatorio extends javax.swing.JFrame {
         setTitle("Cadastro de Relatorios");
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        TextRelatorio.setEditable(false);
         TextRelatorio.setColumns(20);
         TextRelatorio.setRows(5);
         jScrollPane1.setViewportView(TextRelatorio);
