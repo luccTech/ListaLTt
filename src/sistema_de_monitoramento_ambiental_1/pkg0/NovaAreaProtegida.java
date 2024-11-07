@@ -63,7 +63,7 @@ public class NovaAreaProtegida extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Gill Sans Ultra Bold", 0, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 153, 102));
-        jLabel3.setText("Tamanho: ");
+        jLabel3.setText("Tamanho:  (hectares) ");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 190, -1, 20));
         getContentPane().add(TfLocal, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 140, 270, -1));
         getContentPane().add(TfNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 70, 270, -1));
