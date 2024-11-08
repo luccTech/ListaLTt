@@ -139,7 +139,7 @@ public class NovaEspecie extends javax.swing.JFrame {
         TextAreaE.append("Nome Popular: \t" + nomePopular + "\n");
         TextAreaE.append("Categoria: \t" + categoria + "\n \n" );
         pa.adicionarEspecie(nomeCientifico, nomePopular, categoria);
-        ImageIcon icon = new ImageIcon("C:\\Users\\lucas\\OneDrive\\Documentos\\aprendendo java\\ListaLTt\\src\\sistema_de_monitoramento_ambiental_1\\pkg0\\imagens\\verificar.png");
+        ImageIcon icon = new ImageIcon(getClass().getResource("\\imagens\\verificar.png"));
         JOptionPane.showMessageDialog(null, "Especie cadastrada com sucesso.","",HEIGHT, icon);
         TfNomeC.setText("");
         TfNomeP.setText("");
@@ -155,7 +155,7 @@ public class NovaEspecie extends javax.swing.JFrame {
     private void btnDadosEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDadosEActionPerformed
 
         pa.listarEspecie();
-        ImageIcon icon = new ImageIcon("C:\\Users\\lucas\\OneDrive\\Documentos\\aprendendo java\\ListaLTt\\src\\sistema_de_monitoramento_ambiental_1\\pkg0\\imagens\\biodegradavel.png");
+        ImageIcon icon = new ImageIcon(getClass().getResource("\\imagens\\biodegradavel.png"));
         JOptionPane.showMessageDialog(rootPane, TextAreaE.getText(), "Especies", HEIGHT, icon);
     }//GEN-LAST:event_btnDadosEActionPerformed
 

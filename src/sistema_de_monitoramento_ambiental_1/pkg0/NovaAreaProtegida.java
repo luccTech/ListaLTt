@@ -140,7 +140,7 @@ public class NovaAreaProtegida extends javax.swing.JFrame {
         TextArea.append("Tamanho: \t" + String.valueOf(tamanho)+ " Hectares" + "\n \n" );
         pa.adicionarArea(nome, local, tamanho);
         
-        ImageIcon icon = new ImageIcon("C:\\Users\\lucas\\OneDrive\\Documentos\\aprendendo java\\ListaLTt\\src\\sistema_de_monitoramento_ambiental_1\\pkg0\\imagens\\verificar.png");
+        ImageIcon icon = new ImageIcon(getClass().getResource("\\imagens\\verificar.png"));
         JOptionPane.showMessageDialog(null, "Área cadastrada com sucesso.","",HEIGHT, icon);
         TfNome.setText("");
         TfLocal.setText("");
@@ -151,7 +151,7 @@ public class NovaAreaProtegida extends javax.swing.JFrame {
 
     private void btnDadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDadosActionPerformed
         pa.listarAreas();
-        ImageIcon icon = new ImageIcon("C:\\Users\\lucas\\OneDrive\\Documentos\\aprendendo java\\ListaLTt\\src\\sistema_de_monitoramento_ambiental_1\\pkg0\\imagens\\sem-caca.png");
+        ImageIcon icon = new ImageIcon(getClass().getResource("\\imagens\\sem-caca.png"));
         JOptionPane.showMessageDialog(rootPane, TextArea.getText(), "Áreas Protegidas" ,HEIGHT, icon);
     }//GEN-LAST:event_btnDadosActionPerformed
 

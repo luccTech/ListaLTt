@@ -105,7 +105,7 @@ public class Principal extends javax.swing.JFrame {
                         if(area.getOr() == 0.0){
                             JOptionPane.showMessageDialog(null, "Ainda não existe áreas protegidas cadastradas.\n Cadastre-as para ver o orçamento", "Erro", 2);
                         }else{
-                            ImageIcon icon = new ImageIcon("C:\\Users\\lucas\\OneDrive\\Documentos\\aprendendo java\\ListaLTt\\src\\sistema_de_monitoramento_ambiental_1\\pkg0\\imagens\\real_brasileiro.png");
+                            ImageIcon icon = new ImageIcon(getClass().getResource("\\imagens\\real_brasileiro.png"));
                         
                             JOptionPane.showMessageDialog(null, "O orçamento total do prejeto é :"+area.getOr()+ "R$", "Orçamento", HEIGHT, icon);
                         }             

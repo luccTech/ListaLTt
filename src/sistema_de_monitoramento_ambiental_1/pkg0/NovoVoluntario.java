@@ -135,7 +135,7 @@ public class NovoVoluntario extends javax.swing.JFrame {
         TextAreaV.append("Cidade: \t" + cidade + "\n \n" );
         pa.adicionarVoluntario(nome, idade, cidade);
         
-        ImageIcon icon = new ImageIcon("C:\\Users\\lucas\\OneDrive\\Documentos\\aprendendo java\\ListaLTt\\src\\sistema_de_monitoramento_ambiental_1\\pkg0\\imagens\\verificar.png");
+        ImageIcon icon = new ImageIcon(getClass().getResource("\\imagens\\verificar.png"));
         JOptionPane.showMessageDialog(null, "Voluntario cadastrado com sucesso.","",HEIGHT, icon);
         
         TfNomeV.setText("");
@@ -153,7 +153,7 @@ public class NovoVoluntario extends javax.swing.JFrame {
     private void btnDadosVActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDadosVActionPerformed
         pa.listarVoluntarios();
         
-        ImageIcon icon = new ImageIcon("C:\\Users\\lucas\\OneDrive\\Documentos\\aprendendo java\\ListaLTt\\src\\sistema_de_monitoramento_ambiental_1\\pkg0\\imagens\\comunidade.png");
+        ImageIcon icon = new ImageIcon(getClass().getResource("\\imagens\\comunidade.png"));
         JOptionPane.showMessageDialog(rootPane, TextAreaV.getText(), "Especies", HEIGHT, icon);
     }//GEN-LAST:event_btnDadosVActionPerformed
 

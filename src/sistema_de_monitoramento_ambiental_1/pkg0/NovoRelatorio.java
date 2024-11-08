@@ -128,7 +128,7 @@ public class NovoRelatorio extends javax.swing.JFrame {
 
     private void btnDados1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDados1ActionPerformed
         pa.listarRelatorios();
-        ImageIcon icon = new ImageIcon("C:\\Users\\lucas\\OneDrive\\Documentos\\aprendendo java\\ListaLTt\\src\\sistema_de_monitoramento_ambiental_1\\pkg0\\imagens\\relatorio.png");
+        ImageIcon icon = new ImageIcon(getClass().getResource("\\imagens\\relatorio.png"));
         JOptionPane.showMessageDialog(rootPane, TextRelatorio.getText(), "Relatorios", HEIGHT, icon);
 
     }//GEN-LAST:event_btnDados1ActionPerformed
@@ -142,7 +142,7 @@ public class NovoRelatorio extends javax.swing.JFrame {
         TextRelatorio.append("Conteudo: \t" + conteudo + "\n \n" );
         pa.adicionarRelatorio(data, responsavel, conteudo);
         
-        ImageIcon icon = new ImageIcon("C:\\Users\\lucas\\OneDrive\\Documentos\\aprendendo java\\ListaLTt\\src\\sistema_de_monitoramento_ambiental_1\\pkg0\\imagens\\verificar.png");
+        ImageIcon icon = new ImageIcon(getClass().getResource("\\imagens\\verificar.png"));
         JOptionPane.showMessageDialog(null, "Relatorio cadastrado com sucesso.","",HEIGHT, icon);
         
         TfData.setText("");
