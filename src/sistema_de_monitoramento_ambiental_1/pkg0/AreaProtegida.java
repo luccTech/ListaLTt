@@ -8,9 +8,9 @@ public class AreaProtegida {
     private String nome;
     private String localizacao;
     private double tamanho; // hectares k
-    private ArrayList<Especie> ListEspecie = new ArrayList<>();
+    private static ArrayList<Especie> ListEspecie = new ArrayList<>();
 
-    public ArrayList<Especie> getListEspecie() {
+    public static ArrayList<Especie> getListEspecie() {
         return ListEspecie;
     }
 

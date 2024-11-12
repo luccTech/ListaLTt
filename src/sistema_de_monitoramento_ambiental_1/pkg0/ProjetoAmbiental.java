@@ -10,9 +10,21 @@ public class ProjetoAmbiental {
     private String descricao;
     private double orcamento;
     private double hectare = 3600.0; // supondo que o preço por hectare seja 3600 R$/hectar
-    private ArrayList<AreaProtegida> ListAreaProtegida = new ArrayList<>();
-    private ArrayList<RelatorioAmbiental> ListRelatorioAmbiental = new ArrayList<>();
-    private ArrayList<Voluntario> ListVoluntario = new ArrayList<>();
+    private static ArrayList<AreaProtegida> ListAreaProtegida = new ArrayList<>();
+
+    public static ArrayList<AreaProtegida> getListAreaProtegida() {
+        return ListAreaProtegida;
+    }
+
+    public ArrayList<RelatorioAmbiental> getListRelatorioAmbiental() {
+        return ListRelatorioAmbiental;
+    }
+
+    public ArrayList<Voluntario> getListVoluntario() {
+        return ListVoluntario;
+    }
+    private static ArrayList<RelatorioAmbiental> ListRelatorioAmbiental = new ArrayList<>();
+    private static ArrayList<Voluntario> ListVoluntario = new ArrayList<>();
     
     public ProjetoAmbiental(String nome, String descricao, double orcamento, double hectare, ArrayList<AreaProtegida> ListAreaProtegida, ArrayList<RelatorioAmbiental> ListRelatorioAmbiental, ArrayList<Voluntario> ListVoluntario) {
         this.nome = nome;

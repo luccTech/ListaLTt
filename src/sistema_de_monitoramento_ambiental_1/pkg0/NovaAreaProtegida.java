@@ -16,7 +16,7 @@ public class NovaAreaProtegida extends javax.swing.JFrame {
     String nome;
     String local;
     double tamanho;
-    double or;
+    static double or;
     
     public NovaAreaProtegida() {
         initComponents();
